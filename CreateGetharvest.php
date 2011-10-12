@@ -27,10 +27,10 @@ $client->set( “details”, $client_description );
 }
 
 //create clients
-$result = $api->createClient( $client );
-if( $result->isSuccess() ) {
+$client_result = $api->createClient( $client );
+if( $client_result->isSuccess() ) {
 // get id of created client
-$client_id = $result->data;
+$client_id = $client_result->data;
 }
 
 //get the project from the URL
@@ -44,10 +44,10 @@ $project->set( “client-id”, $client_id );
 $project->set( “notes”, $project_notes);
 
 //create projects
-$result = $api->createProject( $project );
-if( $result->isSuccess() ) {
+$project_result = $api->createProject( $project );
+if( $project_result->isSuccess() ) {
 // get id of created project
-$project_id = $result->data;
+$project_id = $project_result->data;
 }
 }
 else {
