@@ -1,0 +1,2 @@
+This project is designed to take Zendesk Organizations and create them as GetHarvest Clients.
+It will also take Zendesk Tickets and create them as GetHarvest Projects.  
