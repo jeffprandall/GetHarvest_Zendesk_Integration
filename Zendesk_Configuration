@@ -1,0 +1,4 @@
+Create one URL Target that points to the CreateGetharvest application.
+Create one URL Target that points to the ArchiveGetHarvest application.
+Create one Trigger that points to the Create URL Target.
+Create one Trigger that points to the Archive URL Target.
