@@ -30,22 +30,15 @@
 
         //create clients
         $client_result = $api->createClient( $client );
-        if( $client_result->isSuccess() ) {
-            // get id of created client
-            $client_id = $client_result->data;
-        }
-        else {
-            error_log("Something went wrong creating the client",0);
-        }
+        if( $client_result->isSuccess() ) {$client_id = $client_result->data;}
+        else {error_log("Something went wrong creating the client",0); }
 
         //get the project from the URL
         if(isset($_GET['project_name']) ) {
             $project_name = $_GET['project_name'];
             $project_notes = $_GET['project_notes'];
         }
-        else {
-            error_log("Project Name does not exist in URL",0);
-        }
+        else {error_log("Project Name does not exist in URL",0);}
 
         //assign project variables
         $project = new Harvest_Project();
@@ -55,12 +48,8 @@
 
         //create projects
         $project_result = $api->createProject( $project );
-        if( $project_result->isSuccess() ) {
-            // get id of created project
-            $project_id = $project_result->data;
-        }
-        else {
-            error_log("Something went wrong creating the project", 0);
+        if( $project_result->isSuccess() ) {$project_id = $project_result->data;}
+        else {error_log("Something went wrong creating the project", 0);
         }
     }
     else {
