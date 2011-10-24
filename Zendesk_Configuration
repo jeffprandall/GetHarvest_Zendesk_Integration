@@ -1,6 +1,6 @@
 Create one URL Target that points to the CreateGetharvest application.
 Title - Create GetHarvest Clients and Projects
-URL - http://<IP Address>/getharvest/getharvest_zendesk.php?client_name={{ticket.organization}}&client_description={{ticket.organization.notes}}&project_name={{ticket.title}}&project_notes={{ticket.latest_comment_formatted}}
+URL - http://<IP Address>/GetHarvest_Zendesk_Integration/CreateGetharvest.php?client_name={{ticket.organization}}&client_description={{ticket.organization.notes}}&project_name={{ticket.title}}&project_notes={{ticket.latest_comment_formatted}}
 Method - GET
 Attribute Name - Message
 
@@ -9,6 +9,13 @@ Conditions - Select any conditions you like
 Perform these options - Notify Target - Create GetHarvest Clients and Projects
 Message - {{ticket.title}}
 
-**COMING SOON**
 Create one URL Target that points to the ArchiveGetHarvest application.
+Title - Archive GetHarvest Projects
+URL - http://<IP Address>/GetHarvest_Zendesk_Integration/ArhciveGetharvest.php?project_name={{ticket.title}}
+Method - GET
+Attribute Name - Message
+
 Create one Trigger that points to the Archive URL Target.
+Conditions - Select any conditions you like
+Perform these options - Notify Target - Archive GetHarvest Projects
+Message - {{ticket.title}}

@@ -1,10 +1,8 @@
 PURPOSE
 This project is designed to take Zendesk Organizations and create them as GetHarvest Clients and 
-take Zendesk Tickets and create them as GetHarvest Projects.
+take Zendesk Tickets and create them as GetHarvest Projects.  And then when tickets are closed in Zendesk
+the Project in GetHarvest gets archived.
 
 SETUP
-Download all the files and upload them to a server that can support PHP and is externally excessible via
-IP address or FQDN.  Amazon EC2 micro instances work well.
-
-COMING SOON
-Archiving Projects.  Once a Zendesk Tickets is closed it will archive a GetHarvest Project.  
+Download all the files and upload them to a server that can support PHP and is externally accessible via
+IP address or FQDN.  Amazon EC2 micro instances work well.  
