@@ -31,7 +31,7 @@
         //create clients
         $client_result = $api->createClient( $client );
         if( $client_result->isSuccess() ) {$client_id = $client_result->data;}
-        else {error_log("Something went wrong creating the client",0); }
+        else {error_log("Something went wrong creating the client" . $client_result->data,0); }
 
         //get the project from the URL
         if(isset($_GET['project_name']) ) {

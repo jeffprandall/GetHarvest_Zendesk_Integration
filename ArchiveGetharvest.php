@@ -13,9 +13,9 @@
 
         //Connect to Harvest and authenticate
         $api = new HarvestAPI();
-        $api->setUser( "support@iaak.net" );
-        $api->setPassword( "Kids123" );
-        $api->setAccount( "IAAK" );
+        $api->setUser( "username" );
+        $api->setPassword( "password" );
+        $api->setAccount( "subdomain" );
         $api->setRetryMode( HarvestAPI::RETRY );      
 
         //get all current projects and find the project_id
