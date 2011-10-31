@@ -11,9 +11,9 @@ Message - {{ticket.title}}
 
 Create one URL Target that points to the ArchiveGetHarvest application.
 Title - Archive GetHarvest Projects
-URL - http://<IP Address>/GetHarvest_Zendesk_Integration/ArhciveGetharvest.php?project_name={{ticket.title}}
+URL - http://<IP Address>/GetHarvest_Zendesk_Integration/ArhciveGetharvest.php?
 Method - GET
-Attribute Name - Message
+Attribute Name - project_name
 
 Create one Trigger that points to the Archive URL Target.
 Conditions - Select any conditions you like
